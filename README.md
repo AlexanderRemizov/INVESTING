@@ -4,3 +4,8 @@ Telegram bot, which helps you to calculate compound interest and send the graph 
 
 ![explanation](explanation.jpg)
 
+
+
+### Example
+
+![example](example.jpg)
