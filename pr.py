@@ -1,15 +1,13 @@
-import pandas as pd
-import ipywidgets
-
-import matplotlib.pyplot as plt
-from matplotlib.ticker import FuncFormatter
-
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
-
 import os
 import time
+from datetime import datetime
+
+import ipywidgets
+import matplotlib.pyplot as plt
+import pandas as pd
 import telebot
+from dateutil.relativedelta import relativedelta
+from matplotlib.ticker import FuncFormatter
 
 my_telegram_token = ""
 bot = telebot.TeleBot(my_telegram_token)
