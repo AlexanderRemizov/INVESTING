@@ -67,11 +67,12 @@ def count_investing(
     months = 0
     dates = []
     total_investing = []
-    monthly_percentage_share = 0.12
+    monthly_percentage_share = 0.01 / 12
     perc_return *= monthly_percentage_share
+    print(perc_return)
     for _ in range(0, count_month):
         if _ != 0:
-            investing = int(investing + investing * perc_return)
+            investing = int(investing + (investing * perc_return))
             investing += month_investing
         dates.append(current_month + relativedelta(months=months))
         total_investing.append(investing)
@@ -121,6 +122,7 @@ def draw_investing(
     plt.xlabel('DATE', fontsize=fontsize)
     plt.ylabel('INVESTING', fontsize=fontsize)
     plt.xlim(min(dates), max(dates))
+    print(total_investing)
     plt.ylim(min(total_investing), max(total_investing))
     plt.plot(dates, total_investing)
     plt.fill_between(dates, total_investing)

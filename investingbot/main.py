@@ -10,9 +10,8 @@ import os
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.dispatcher.filters import Text
 from aiogram.utils import markdown as fmt
-
-from investingbot.investing import draw_investing
-from investingbot.settings import TOKEN
+from investing import draw_investing
+from settings import TOKEN
 
 # Configure bot and Dispatcher for running
 bot = Bot(token=TOKEN)
