@@ -83,6 +83,7 @@ async def cmd_main(message: types.Message) -> None:
         seed_money = int(text[3])
     else:
         seed_money = month_investing
+    row = [1, 2, 3]
     answer_message = draw_investing(
         message.from_user.id,
         month_investing,
