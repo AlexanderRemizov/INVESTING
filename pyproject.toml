@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "investing"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Remizov <remizovalexander16pmi2@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiogram = "^2.11.2"
+matplotlib = "^3.3.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
